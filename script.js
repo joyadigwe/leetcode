@@ -26,3 +26,5 @@ var twoSum = function(nums, target) {
         }
     }
 };
+
+const convert = (minutes) => minutes * 60
