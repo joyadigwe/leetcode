@@ -53,4 +53,39 @@ function firstRecurringCharacter(input) {
     }
     return undefined;
 }
-firstRecurringCharacter([2,5,1,2,3,5,1,2,4])
+//time complexity O(n^2)
+
+function firstRecurringCharacter2(input) {
+    let map = {};
+    for(let i=0; i<input.length; i++) {
+        if(map[input[i]] !== undefined) {
+            return input[i]
+        }
+        else {
+            map[input[i]] = i
+        }
+    } 
+    return undefined;
+}
+
+firstRecurringCharacter2([2,5,1,2,3,5,1,2,4])
+
+//Create a function that takes a number as an argument
+//increments the number by +1 and returns the result
+function addition(num) {
+    return ++num
+}
+
+//Call a function and save the return value in x:
+var x = myFunction(4,3);
+
+function myFunction(a, b) {
+    //Return the product of a and b
+    return a * b;
+}
+
+//Write a function that takes the base and height of a triangle
+//Return its area
+function triArea(base, height) {
+    return (base*height)/2;
+}
