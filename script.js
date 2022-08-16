@@ -89,3 +89,19 @@ function myFunction(a, b) {
 function triArea(base, height) {
     return (base*height)/2;
 }
+
+//Return true if the given string is a palindrome. Otherwise, return false.
+//check if string given as input, is the same as reversed
+function palindrome(str) {
+    //convert to an array of letters
+    //reverse to reverse all the letters in array
+    //join to convert back to a string
+    var reversed = str.split("").reverse().join("");
+    if (reversed === str) {return true;
+    
+    } else {
+    
+    return false;
+    }
+}
+console.log(palindrome("eye"));
