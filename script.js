@@ -27,6 +27,9 @@ var twoSum = function(nums, target) {
     }
 };
 
+function subtraction(a,b) {
+    return a-b;
+}
 
 
 //Google Question
