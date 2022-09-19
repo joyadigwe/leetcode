@@ -155,3 +155,4 @@ const myLinkedList = new LinkedList(10);
 //myLinkedList.append(5);
 //myLinkedList.append(16);
 console.log(myLinkedList);
+
