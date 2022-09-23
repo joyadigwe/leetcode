@@ -24,3 +24,41 @@ function makePair(num1, num2) {
 function addition(num1, num2) {
     return num1 + num2;
 }
+
+/* Add a constructor to this class. The constructor takes arguments for the name, sides, and sideLength properties.
+Add a new method calcPerimeter() method to the class which calculates its perimeter(the length of the shape's outer edge) and logs the result to the console.
+Give a new instance of the Shape class called square. ive it a name of square and a sideLength of 5.
+Call your calcPerimeter() method on the instance
+Create a new instance of Shape called triangle, with a name of triangle and sideLength of 3
+Call triangle.calcPerimeter() */
+
+class Shape {
+    name;
+    sides;
+    sideLength;
+
+    constructor(name, sides, sideLength) {
+        this.name = name;
+        this.side = sides;
+        this.sideLength = sideLength;
+    }
+    calcPerimeter() {
+        console.log(this.side * this.sideLength)
+    }
+}
+
+let square = new Shape ('newSquare', 4, 5); 
+square.calcPerimeter();
+
+let triangle = new Shape ('newTriangle', 3, 3);
+triangle.calcPerimeter();
+
+
+
+
+
+
+
+
+
+
