@@ -53,9 +53,30 @@ square.calcPerimeter();
 let triangle = new Shape ('newTriangle', 3, 3);
 triangle.calcPerimeter();
 
+//Write a function that returns the string "something" joined with a spcae " " and the given argument a
+// giveMeSomething("is better than nothing") --> "something is better than nothing"
 
+function giveMeSomething(a) {
+    let text = "something ";
+    return text.concat(a);
+}
 
+function giveMeSomething(a) {
+    return "something" + " " + a;
+}
 
+/* A student learning JavaScript was trying tp make a function. His code should
+concatenate a passed strig name with String "Edabit" and store it in a variable called result.
+nameString("Mubashir") --> "MubashirEdabit" */
+
+//concat name and "Edabit"
+//store result in variable called result
+
+function nameString(name) {
+    var b = "Edabit";
+    var result = name + b;
+    return result;
+}
 
 
 
